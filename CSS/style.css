@@ -1,0 +1,178 @@
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.app{
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:
+        "cabecalho"
+        "conteudo" 
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+
+   
+}
+
+.cabecalho{
+    align-items: left;
+    grid-area: cabecalho;
+   
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    margin-bottom: 5px;
+    background-color: #057aff;
+    width: calc(100% + 15px);
+    margin-top: 5px;
+}
+.menu a{
+    padding: 10px;    
+    border-right: 2px  solid #f1f1f1  ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;    
+    
+}
+.conteudo{
+    grid-area: conteudo;
+ 
+}
+
+
+.destaques{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    column-gap: 5px;
+    transition: 500ms;
+}
+
+.destaques:hover{
+    transition: 500ms;
+}
+
+.destaques h3,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(49, 47, 47, 0.555);
+    font-size: 1rem;
+    line-height: 2;
+    width: 100%;
+}
+
+.caixa{
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+}
+
+.caixa:hover{
+    font-size: 1.5rem;
+    transform: scale(0.9);
+}
+
+.caixa h2:hover, .caixa h3:hover{
+    font-size: 1.3rem;
+}
+
+.grid-item__comprar{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1 ;
+    text-align:center;
+    background: url(../Imagens/comprar.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+
+.grid-item__vender{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1 ;
+    text-align:center;
+    background: url(../Imagens/vender.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+.grid-item__avaliar{
+    grid-column: 3 / 3;
+    grid-row: 1 / 1 ;
+    text-align:center;
+    background: url(../Imagens/Avaliar.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+.grid-item__devolver{
+    grid-column: 4 / 4;
+    grid-row: 1 / 1 ;
+    text-align:center;
+    background: url(../Imagens/devolver.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+.destaque__destaque{
+    text-align:center;
+    background: royalblue;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4 ;
+    background: url(../Imagens/DESTAQUE.jpg) center / cover no-repeat;
+    border-bottom: 5px solid #f1f1f1;
+}
+
+.grid-item__30porcento{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2 ;
+    text-align:center;
+    background: url(../Imagens/30_porcento.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+.grid-item__40porcento{
+    grid-column: 4 / 4;
+    grid-row: 2 / 2 ;
+    text-align:center;
+    background: url(../Imagens/40_porcento.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+.grid-item__50porcento{
+    grid-column: 3 / 3;
+    grid-row: 3 / 3 ;
+    text-align:center;
+    background: url(../Imagens/50\ porcento.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+
+.grid-item__60porcento{
+    grid-column: 4 / 4;
+    grid-row: 3 / 3 ;
+    text-align:center;
+    background: url(../Imagens/60_porcento.jpg) center / cover no-repeat;
+    height: 300px;
+    border-bottom: 5px solid #f1f1f1; 
+}
+.rodape{
+    grid-area: rodape;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    background: #057aff;
+    line-height: 2;
+    width: calc(100% + 15px);
+    color: white;
+    font-weight: bold; 
+}
